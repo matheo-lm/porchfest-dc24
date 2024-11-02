@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa60ce1e323668baf60b869ec3795c1b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fa60ce1e323668baf60b869ec3795c1b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa60ce1e323668baf60b869ec3795c1b = L.map(
+                "map_fa60ce1e323668baf60b869ec3795c1b",
+                {
+                    center: [38.9215, -77.0434],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c5988a055d46cb7b184e0d98390de494 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var marker_0772a8d57e5b33e92d1a11003676b76a = L.marker(
+                [38.922329, -77.037681],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_fb97974fbe617dce8c927ed3fef0a18b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0772a8d57e5b33e92d1a11003676b76a.setIcon(icon_fb97974fbe617dce8c927ed3fef0a18b);
+        
+    
+        var popup_1a98a8bdb46b2c0463b7941e5afd9c40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_491fb3edc992354d1a32a9dc6fba7654 = $(`<div id="html_491fb3edc992354d1a32a9dc6fba7654" style="width: 100.0%; height: 100.0%;">The Potter's House<br>1658 Columbia Rd NW</div>`)[0];
+            popup_1a98a8bdb46b2c0463b7941e5afd9c40.setContent(html_491fb3edc992354d1a32a9dc6fba7654);
+        
+
+        marker_0772a8d57e5b33e92d1a11003676b76a.bindPopup(popup_1a98a8bdb46b2c0463b7941e5afd9c40)
+        ;
+
+        
+    
+    
+            marker_0772a8d57e5b33e92d1a11003676b76a.bindTooltip(
+                `<div>
+                     The Potter's House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83cff56d5cb8906fa57bccf00f195653 = L.marker(
+                [38.92276, -77.039052],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_9ac0256d5f2a418a30bb12fedc55b380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83cff56d5cb8906fa57bccf00f195653.setIcon(icon_9ac0256d5f2a418a30bb12fedc55b380);
+        
+    
+        var popup_bb971e02bfddeca8da3e1cbd773b2596 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5ef174f8fa4cfa84088c7c26dd68887 = $(`<div id="html_c5ef174f8fa4cfa84088c7c26dd68887" style="width: 100.0%; height: 100.0%;">1712 Lanier Place<br>1712 Lanier Pl NW</div>`)[0];
+            popup_bb971e02bfddeca8da3e1cbd773b2596.setContent(html_c5ef174f8fa4cfa84088c7c26dd68887);
+        
+
+        marker_83cff56d5cb8906fa57bccf00f195653.bindPopup(popup_bb971e02bfddeca8da3e1cbd773b2596)
+        ;
+
+        
+    
+    
+            marker_83cff56d5cb8906fa57bccf00f195653.bindTooltip(
+                `<div>
+                     1712 Lanier Place
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24ea2eb2773eb9621b71ea781b4c93a9 = L.marker(
+                [38.922523, -77.039594],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_11b7a8f48d5941573211d131b960c5fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24ea2eb2773eb9621b71ea781b4c93a9.setIcon(icon_11b7a8f48d5941573211d131b960c5fa);
+        
+    
+        var popup_d849ac333a2ff269afe6a59edd5db879 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_735dd9d3c060140be397c08bad2fe0f7 = $(`<div id="html_735dd9d3c060140be397c08bad2fe0f7" style="width: 100.0%; height: 100.0%;">2719 Ontario<br>2719 Ontario Rd NW</div>`)[0];
+            popup_d849ac333a2ff269afe6a59edd5db879.setContent(html_735dd9d3c060140be397c08bad2fe0f7);
+        
+
+        marker_24ea2eb2773eb9621b71ea781b4c93a9.bindPopup(popup_d849ac333a2ff269afe6a59edd5db879)
+        ;
+
+        
+    
+    
+            marker_24ea2eb2773eb9621b71ea781b4c93a9.bindTooltip(
+                `<div>
+                     2719 Ontario
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aa4556b978015b19f65d9629452e5e3 = L.marker(
+                [38.922422, -77.038824],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_169b7f28b9e90ea0867d2aea1eae5ac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4aa4556b978015b19f65d9629452e5e3.setIcon(icon_169b7f28b9e90ea0867d2aea1eae5ac2);
+        
+    
+        var popup_c9aa191b027d2064c227d6a12cbe1aba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6feeb6df40ea7eb7e366d52eb46baf57 = $(`<div id="html_6feeb6df40ea7eb7e366d52eb46baf57" style="width: 100.0%; height: 100.0%;">Joseph's House<br>1730 Lanier Place NW</div>`)[0];
+            popup_c9aa191b027d2064c227d6a12cbe1aba.setContent(html_6feeb6df40ea7eb7e366d52eb46baf57);
+        
+
+        marker_4aa4556b978015b19f65d9629452e5e3.bindPopup(popup_c9aa191b027d2064c227d6a12cbe1aba)
+        ;
+
+        
+    
+    
+            marker_4aa4556b978015b19f65d9629452e5e3.bindTooltip(
+                `<div>
+                     Joseph's House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_285a46dd4ec734431f2cf30f727df256 = L.marker(
+                [38.924131, -77.042105],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_8f6f9ea3afcb1fb3e1e39dcc4cc393a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_285a46dd4ec734431f2cf30f727df256.setIcon(icon_8f6f9ea3afcb1fb3e1e39dcc4cc393a0);
+        
+    
+        var popup_559f44ce9d646c5d30dd610cade5814c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21f42f0f3185ba3d6c92be62485396e9 = $(`<div id="html_21f42f0f3185ba3d6c92be62485396e9" style="width: 100.0%; height: 100.0%;">2801 Adams Mill Road<br>2801 Adams Mill Rd NW</div>`)[0];
+            popup_559f44ce9d646c5d30dd610cade5814c.setContent(html_21f42f0f3185ba3d6c92be62485396e9);
+        
+
+        marker_285a46dd4ec734431f2cf30f727df256.bindPopup(popup_559f44ce9d646c5d30dd610cade5814c)
+        ;
+
+        
+    
+    
+            marker_285a46dd4ec734431f2cf30f727df256.bindTooltip(
+                `<div>
+                     2801 Adams Mill Road
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c333503f8701e16857581d82e1641b = L.marker(
+                [38.922504, -77.042265],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_2b1b092342a44e3f2caab257a6e6b34d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c9c333503f8701e16857581d82e1641b.setIcon(icon_2b1b092342a44e3f2caab257a6e6b34d);
+        
+    
+        var popup_d418e5ea65af161f462c6d08667fef6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cf070f0cc4ca9d29b2ec0653efc6c31 = $(`<div id="html_9cf070f0cc4ca9d29b2ec0653efc6c31" style="width: 100.0%; height: 100.0%;">Because Science<br>1759 Columbia Rd NW</div>`)[0];
+            popup_d418e5ea65af161f462c6d08667fef6d.setContent(html_9cf070f0cc4ca9d29b2ec0653efc6c31);
+        
+
+        marker_c9c333503f8701e16857581d82e1641b.bindPopup(popup_d418e5ea65af161f462c6d08667fef6d)
+        ;
+
+        
+    
+    
+            marker_c9c333503f8701e16857581d82e1641b.bindTooltip(
+                `<div>
+                     Because Science
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89ca51e392260e2bde1e07f1a1f43b40 = L.marker(
+                [38.922708, -77.042314],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_4bd7e0204acfb054d0c0267ce59a75f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89ca51e392260e2bde1e07f1a1f43b40.setIcon(icon_4bd7e0204acfb054d0c0267ce59a75f9);
+        
+    
+        var popup_d7b7722e1363d0e1549b4dd8beef3704 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eeb019c950db346cfeb008b26cbb0a88 = $(`<div id="html_eeb019c950db346cfeb008b26cbb0a88" style="width: 100.0%; height: 100.0%;">Venture X<br>1763 Columbia Rd NW</div>`)[0];
+            popup_d7b7722e1363d0e1549b4dd8beef3704.setContent(html_eeb019c950db346cfeb008b26cbb0a88);
+        
+
+        marker_89ca51e392260e2bde1e07f1a1f43b40.bindPopup(popup_d7b7722e1363d0e1549b4dd8beef3704)
+        ;
+
+        
+    
+    
+            marker_89ca51e392260e2bde1e07f1a1f43b40.bindTooltip(
+                `<div>
+                     Venture X
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd97e8d20e2a7e8952a90f56a92a1f5b = L.marker(
+                [38.922186, -77.03764],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_7ff0bbe9bd5e3ecf995aa3e2fe788232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd97e8d20e2a7e8952a90f56a92a1f5b.setIcon(icon_7ff0bbe9bd5e3ecf995aa3e2fe788232);
+        
+    
+        var popup_3a8a30912468c103a5b8c7c724bc2a66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2da339e48d952918ee078c84f53cf92 = $(`<div id="html_d2da339e48d952918ee078c84f53cf92" style="width: 100.0%; height: 100.0%;">1750 Euclid<br>1750 Euclid St NW</div>`)[0];
+            popup_3a8a30912468c103a5b8c7c724bc2a66.setContent(html_d2da339e48d952918ee078c84f53cf92);
+        
+
+        marker_bd97e8d20e2a7e8952a90f56a92a1f5b.bindPopup(popup_3a8a30912468c103a5b8c7c724bc2a66)
+        ;
+
+        
+    
+    
+            marker_bd97e8d20e2a7e8952a90f56a92a1f5b.bindTooltip(
+                `<div>
+                     1750 Euclid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13b584ee3134c1fa2f692ce11b0161f0 = L.marker(
+                [38.922992, -77.039436],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_55e71e3164cad8155e1dfa0d5fbab47f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13b584ee3134c1fa2f692ce11b0161f0.setIcon(icon_55e71e3164cad8155e1dfa0d5fbab47f);
+        
+    
+        var popup_15430f713f654d84c2d1607a4095f225 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58e216c63f99d1732db5e3c71e9802f6 = $(`<div id="html_58e216c63f99d1732db5e3c71e9802f6" style="width: 100.0%; height: 100.0%;">1786 Lanier Place<br>1786 Lanier Pl NW</div>`)[0];
+            popup_15430f713f654d84c2d1607a4095f225.setContent(html_58e216c63f99d1732db5e3c71e9802f6);
+        
+
+        marker_13b584ee3134c1fa2f692ce11b0161f0.bindPopup(popup_15430f713f654d84c2d1607a4095f225)
+        ;
+
+        
+    
+    
+            marker_13b584ee3134c1fa2f692ce11b0161f0.bindTooltip(
+                `<div>
+                     1786 Lanier Place
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff110899ef9c93eb0e583d4e3a7cdd0f = L.marker(
+                [38.924667, -77.043213],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_926b8c23ec9f479f2a909a8bd05a34e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ff110899ef9c93eb0e583d4e3a7cdd0f.setIcon(icon_926b8c23ec9f479f2a909a8bd05a34e9);
+        
+    
+        var popup_0780001080b78e4aa7bd5fc8bf51f9d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e4152a0c9a75f8823aa9cce96289da9 = $(`<div id="html_0e4152a0c9a75f8823aa9cce96289da9" style="width: 100.0%; height: 100.0%;">2502 Cliffbourne<br>2502 Cliffbourne Pl NW</div>`)[0];
+            popup_0780001080b78e4aa7bd5fc8bf51f9d5.setContent(html_0e4152a0c9a75f8823aa9cce96289da9);
+        
+
+        marker_ff110899ef9c93eb0e583d4e3a7cdd0f.bindPopup(popup_0780001080b78e4aa7bd5fc8bf51f9d5)
+        ;
+
+        
+    
+    
+            marker_ff110899ef9c93eb0e583d4e3a7cdd0f.bindTooltip(
+                `<div>
+                     2502 Cliffbourne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24e048a879e2bb9e522344e24f08fd97 = L.marker(
+                [38.922719, -77.043808],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_af4fc4ffe9ee1cc1c551d908799d3bcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24e048a879e2bb9e522344e24f08fd97.setIcon(icon_af4fc4ffe9ee1cc1c551d908799d3bcd);
+        
+    
+        var popup_1a7a495834ea7e85523ff77ebc4a6b5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_170ec49af2fad55b3c03def47c3ae143 = $(`<div id="html_170ec49af2fad55b3c03def47c3ae143" style="width: 100.0%; height: 100.0%;">1967 Biltmore Street<br>1967 Biltmore St NW</div>`)[0];
+            popup_1a7a495834ea7e85523ff77ebc4a6b5e.setContent(html_170ec49af2fad55b3c03def47c3ae143);
+        
+
+        marker_24e048a879e2bb9e522344e24f08fd97.bindPopup(popup_1a7a495834ea7e85523ff77ebc4a6b5e)
+        ;
+
+        
+    
+    
+            marker_24e048a879e2bb9e522344e24f08fd97.bindTooltip(
+                `<div>
+                     1967 Biltmore Street
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_181d90dddeb7b75d700602c453f98da1 = L.marker(
+                [38.922118, -77.041631],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_2edc1e233d789ef99bffc359b276b1c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_181d90dddeb7b75d700602c453f98da1.setIcon(icon_2edc1e233d789ef99bffc359b276b1c6);
+        
+    
+        var popup_fe240f89a892e96e798b1f0c88183e08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31133c830389b756e879029aa13fc90b = $(`<div id="html_31133c830389b756e879029aa13fc90b" style="width: 100.0%; height: 100.0%;">Throughline<br>1838 Columbia Rd NW</div>`)[0];
+            popup_fe240f89a892e96e798b1f0c88183e08.setContent(html_31133c830389b756e879029aa13fc90b);
+        
+
+        marker_181d90dddeb7b75d700602c453f98da1.bindPopup(popup_fe240f89a892e96e798b1f0c88183e08)
+        ;
+
+        
+    
+    
+            marker_181d90dddeb7b75d700602c453f98da1.bindTooltip(
+                `<div>
+                     Throughline
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4845d9bf23cb11a8873028cfc6cee45e = L.marker(
+                [38.922289, -77.041221],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_675b41b2c2ac89401e1d3fc580cab7b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4845d9bf23cb11a8873028cfc6cee45e.setIcon(icon_675b41b2c2ac89401e1d3fc580cab7b6);
+        
+    
+        var popup_be0a0eb8668c7b89588c77385b51ff24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30a9034f1f02575989903f4f1780e7ad = $(`<div id="html_30a9034f1f02575989903f4f1780e7ad" style="width: 100.0%; height: 100.0%;">1851 Columbia Rd<br>1851 Columbia Rd NW</div>`)[0];
+            popup_be0a0eb8668c7b89588c77385b51ff24.setContent(html_30a9034f1f02575989903f4f1780e7ad);
+        
+
+        marker_4845d9bf23cb11a8873028cfc6cee45e.bindPopup(popup_be0a0eb8668c7b89588c77385b51ff24)
+        ;
+
+        
+    
+    
+            marker_4845d9bf23cb11a8873028cfc6cee45e.bindTooltip(
+                `<div>
+                     1851 Columbia Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c415713158ef448dbe2adbfbedb34f6 = L.marker(
+                [38.921917, -77.041416],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_0a8fc5e36bc73c3bb239d5a85dad063a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c415713158ef448dbe2adbfbedb34f6.setIcon(icon_0a8fc5e36bc73c3bb239d5a85dad063a);
+        
+    
+        var popup_52a23b502ac26990fb6e70e2b44a928d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e497d8e6444acdf1ac7ec5f6d144e6d = $(`<div id="html_4e497d8e6444acdf1ac7ec5f6d144e6d" style="width: 100.0%; height: 100.0%;">1908 Belmont Rd<br>1908 Belmont Rd NW</div>`)[0];
+            popup_52a23b502ac26990fb6e70e2b44a928d.setContent(html_4e497d8e6444acdf1ac7ec5f6d144e6d);
+        
+
+        marker_5c415713158ef448dbe2adbfbedb34f6.bindPopup(popup_52a23b502ac26990fb6e70e2b44a928d)
+        ;
+
+        
+    
+    
+            marker_5c415713158ef448dbe2adbfbedb34f6.bindTooltip(
+                `<div>
+                     1908 Belmont Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ce1e7a74ef9e3cfc44b19dd779819d1 = L.marker(
+                [38.921853, -77.04154],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_62daa38134960096b35a8a3b31f10cd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1ce1e7a74ef9e3cfc44b19dd779819d1.setIcon(icon_62daa38134960096b35a8a3b31f10cd2);
+        
+    
+        var popup_dcafb01a7987951c5d50bdc5517fa2c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_462eeaa48a0b8b7dbabd1f7cb5aa71bc = $(`<div id="html_462eeaa48a0b8b7dbabd1f7cb5aa71bc" style="width: 100.0%; height: 100.0%;">Kalorama Park<br>1865 Kalorama Rd NW</div>`)[0];
+            popup_dcafb01a7987951c5d50bdc5517fa2c1.setContent(html_462eeaa48a0b8b7dbabd1f7cb5aa71bc);
+        
+
+        marker_1ce1e7a74ef9e3cfc44b19dd779819d1.bindPopup(popup_dcafb01a7987951c5d50bdc5517fa2c1)
+        ;
+
+        
+    
+    
+            marker_1ce1e7a74ef9e3cfc44b19dd779819d1.bindTooltip(
+                `<div>
+                     Kalorama Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d59b04d04c3e9b00e5bcf3b1fc31fab = L.marker(
+                [38.921262, -77.041756],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_87f400894558775ae8c13f27f8296aae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d59b04d04c3e9b00e5bcf3b1fc31fab.setIcon(icon_87f400894558775ae8c13f27f8296aae);
+        
+    
+        var popup_11e873a119fe03a2657810c0d76cb468 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbc8153719a049c08e609cb5eda085b3 = $(`<div id="html_dbc8153719a049c08e609cb5eda085b3" style="width: 100.0%; height: 100.0%;">Highroad Hotel<br>1800 Belmont Rd NW</div>`)[0];
+            popup_11e873a119fe03a2657810c0d76cb468.setContent(html_dbc8153719a049c08e609cb5eda085b3);
+        
+
+        marker_5d59b04d04c3e9b00e5bcf3b1fc31fab.bindPopup(popup_11e873a119fe03a2657810c0d76cb468)
+        ;
+
+        
+    
+    
+            marker_5d59b04d04c3e9b00e5bcf3b1fc31fab.bindTooltip(
+                `<div>
+                     Highroad Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35e4271b0a91a58eb9a53ba864c77dbe = L.marker(
+                [38.921903, -77.039853],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_58d77cddf76c6f76103ea601d450b542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35e4271b0a91a58eb9a53ba864c77dbe.setIcon(icon_58d77cddf76c6f76103ea601d450b542);
+        
+    
+        var popup_1f11e0574c1bfa48bb5c2448638f95d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5fa8c92b03dc0f196fa92000912f7b3 = $(`<div id="html_e5fa8c92b03dc0f196fa92000912f7b3" style="width: 100.0%; height: 100.0%;">2300 Ontario Rd<br>2300 Ontario Rd NW</div>`)[0];
+            popup_1f11e0574c1bfa48bb5c2448638f95d9.setContent(html_e5fa8c92b03dc0f196fa92000912f7b3);
+        
+
+        marker_35e4271b0a91a58eb9a53ba864c77dbe.bindPopup(popup_1f11e0574c1bfa48bb5c2448638f95d9)
+        ;
+
+        
+    
+    
+            marker_35e4271b0a91a58eb9a53ba864c77dbe.bindTooltip(
+                `<div>
+                     2300 Ontario Rd
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_540e5879cfdf9265936da72c3f5141a6 = L.marker(
+                [38.919811, -77.041897],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_fbe5cc8b0877e7f47b2893b730d8eab9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_540e5879cfdf9265936da72c3f5141a6.setIcon(icon_fbe5cc8b0877e7f47b2893b730d8eab9);
+        
+    
+        var popup_d7151219583a1789e138a0e7747f50c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c149817b740286e3296cb057b1077ba4 = $(`<div id="html_c149817b740286e3296cb057b1077ba4" style="width: 100.0%; height: 100.0%;">2109 19th St<br>2109 19th St NW</div>`)[0];
+            popup_d7151219583a1789e138a0e7747f50c6.setContent(html_c149817b740286e3296cb057b1077ba4);
+        
+
+        marker_540e5879cfdf9265936da72c3f5141a6.bindPopup(popup_d7151219583a1789e138a0e7747f50c6)
+        ;
+
+        
+    
+    
+            marker_540e5879cfdf9265936da72c3f5141a6.bindTooltip(
+                `<div>
+                     2109 19th St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_908d9283bc6c4f034780fd20c6de8d8b = L.marker(
+                [38.920691, -77.043318],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_973ce85532f2cb6e2416648c16122f94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_908d9283bc6c4f034780fd20c6de8d8b.setIcon(icon_973ce85532f2cb6e2416648c16122f94);
+        
+    
+        var popup_0a28af4fd94f3f2c0869e8bf2cce8ad2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a55be698825184e5471519cd9eaf973 = $(`<div id="html_6a55be698825184e5471519cd9eaf973" style="width: 100.0%; height: 100.0%;">1836 California<br>1836 California St NW</div>`)[0];
+            popup_0a28af4fd94f3f2c0869e8bf2cce8ad2.setContent(html_6a55be698825184e5471519cd9eaf973);
+        
+
+        marker_908d9283bc6c4f034780fd20c6de8d8b.bindPopup(popup_0a28af4fd94f3f2c0869e8bf2cce8ad2)
+        ;
+
+        
+    
+    
+            marker_908d9283bc6c4f034780fd20c6de8d8b.bindTooltip(
+                `<div>
+                     1836 California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c30b5b540cdc353a6640438799a1501 = L.marker(
+                [38.919964, -77.042776],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_2ce8026a3b379b7941b9026817eb8c16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c30b5b540cdc353a6640438799a1501.setIcon(icon_2ce8026a3b379b7941b9026817eb8c16);
+        
+    
+        var popup_1782bf8384c91a5cc6384c7093f64270 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1031fc976e6012936731366fbe22de40 = $(`<div id="html_1031fc976e6012936731366fbe22de40" style="width: 100.0%; height: 100.0%;">MINT Gym and Studio<br>1724 California St NW</div>`)[0];
+            popup_1782bf8384c91a5cc6384c7093f64270.setContent(html_1031fc976e6012936731366fbe22de40);
+        
+
+        marker_5c30b5b540cdc353a6640438799a1501.bindPopup(popup_1782bf8384c91a5cc6384c7093f64270)
+        ;
+
+        
+    
+    
+            marker_5c30b5b540cdc353a6640438799a1501.bindTooltip(
+                `<div>
+                     MINT Gym and Studio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcfb91aa5c616f0fbd8fd7ca578cfe7d = L.marker(
+                [38.91939, -77.041058],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_c7f68c5fda5eb233a0da734d66d35d95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dcfb91aa5c616f0fbd8fd7ca578cfe7d.setIcon(icon_c7f68c5fda5eb233a0da734d66d35d95);
+        
+    
+        var popup_4d2dde903a4e3352ebc7024a04e4dd82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ae4283b15a399f2c5c9edabd9604031 = $(`<div id="html_8ae4283b15a399f2c5c9edabd9604031" style="width: 100.0%; height: 100.0%;">El Tamarindo<br>1785 Florida Ave NW</div>`)[0];
+            popup_4d2dde903a4e3352ebc7024a04e4dd82.setContent(html_8ae4283b15a399f2c5c9edabd9604031);
+        
+
+        marker_dcfb91aa5c616f0fbd8fd7ca578cfe7d.bindPopup(popup_4d2dde903a4e3352ebc7024a04e4dd82)
+        ;
+
+        
+    
+    
+            marker_dcfb91aa5c616f0fbd8fd7ca578cfe7d.bindTooltip(
+                `<div>
+                     El Tamarindo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_410423f42ef275f04d1feec6b9a71b8c = L.marker(
+                [38.920812, -77.042493],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_73221175f5bb8141d9ac8fa7dd3f44ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_410423f42ef275f04d1feec6b9a71b8c.setIcon(icon_73221175f5bb8141d9ac8fa7dd3f44ec);
+        
+    
+        var popup_b0a92e3341f32dbace7bbfd3282e579a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4edd2d1ca933ef100cf8732b256fd7ee = $(`<div id="html_4edd2d1ca933ef100cf8732b256fd7ee" style="width: 100.0%; height: 100.0%;">Aetna Stage<br>2424 18th St NW</div>`)[0];
+            popup_b0a92e3341f32dbace7bbfd3282e579a.setContent(html_4edd2d1ca933ef100cf8732b256fd7ee);
+        
+
+        marker_410423f42ef275f04d1feec6b9a71b8c.bindPopup(popup_b0a92e3341f32dbace7bbfd3282e579a)
+        ;
+
+        
+    
+    
+            marker_410423f42ef275f04d1feec6b9a71b8c.bindTooltip(
+                `<div>
+                     Aetna Stage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1b0fc1164e6a7d101139631c6cae522 = L.marker(
+                [38.922509, -77.041211],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_00fc017ac944632075245a8f54af2bac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1b0fc1164e6a7d101139631c6cae522.setIcon(icon_00fc017ac944632075245a8f54af2bac);
+        
+    
+        var popup_7df8665be6c501727b3e1d2472a5a8ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d4b9f8c8fb956efe563004b71d577d = $(`<div id="html_a7d4b9f8c8fb956efe563004b71d577d" style="width: 100.0%; height: 100.0%;">Plaza Stage<br>1800 Columbia Rd NW</div>`)[0];
+            popup_7df8665be6c501727b3e1d2472a5a8ab.setContent(html_a7d4b9f8c8fb956efe563004b71d577d);
+        
+
+        marker_b1b0fc1164e6a7d101139631c6cae522.bindPopup(popup_7df8665be6c501727b3e1d2472a5a8ab)
+        ;
+
+        
+    
+    
+            marker_b1b0fc1164e6a7d101139631c6cae522.bindTooltip(
+                `<div>
+                     Plaza Stage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10d24e00842d4c57ecbab98ad59f7030 = L.marker(
+                [38.920568, -77.042916],
+                {}
+            ).addTo(map_fa60ce1e323668baf60b869ec3795c1b);
+        
+    
+            var icon_ea5a7d59bc8264b82321970b2b5f2711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10d24e00842d4c57ecbab98ad59f7030.setIcon(icon_ea5a7d59bc8264b82321970b2b5f2711);
+        
+    
+        var popup_45a6cc46271502d9dde74d9824c092f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18fcd54970d9946373c35d1e0225eb41 = $(`<div id="html_18fcd54970d9946373c35d1e0225eb41" style="width: 100.0%; height: 100.0%;">Marie Reed Stage<br>2201 18th St NW</div>`)[0];
+            popup_45a6cc46271502d9dde74d9824c092f6.setContent(html_18fcd54970d9946373c35d1e0225eb41);
+        
+
+        marker_10d24e00842d4c57ecbab98ad59f7030.bindPopup(popup_45a6cc46271502d9dde74d9824c092f6)
+        ;
+
+        
+    
+    
+            marker_10d24e00842d4c57ecbab98ad59f7030.bindTooltip(
+                `<div>
+                     Marie Reed Stage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
